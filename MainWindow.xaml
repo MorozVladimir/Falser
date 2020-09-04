@@ -1,0 +1,42 @@
+﻿<Window x:Class="Falser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Falser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" >
+    <Grid>
+        <Grid HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox 
+                VerticalAlignment="Bottom"
+                Margin="10"
+                Width="200"
+                Height="40"
+                Grid.Row="0"
+                FontSize="25" 
+                Name="textInput" 
+                TouchEnter="TextBox_TouchEnter" 
+                TextChanged="textInput_TextChanged" 
+                KeyDown="textInput_KeyDown">
+            </TextBox>
+            <Label
+                Margin="10"
+                HorizontalAlignment="Center"
+                FontSize="25"
+                Grid.Row="1" 
+                Name="textLabel">
+                Ничего ни введено
+            </Label>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>
