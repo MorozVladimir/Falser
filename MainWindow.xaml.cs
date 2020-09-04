@@ -32,32 +32,6 @@ namespace Falser
             InitializeComponent();
         }
 
-        private void TextBox_TouchEnter(object sender, TouchEventArgs e)
-        {
-            if(isFirst == true) 
-            {
-                textLabel.Content = textInput.Text;
-                isFirst = false;
-                etalon = textInput.Text;
-            }
-            else
-            {
-                if (etalon.Equals(textInput.Text))
-                {
-                    this.Background = new SolidColorBrush(Colors.Green);
-                }
-                else
-                {
-                    this.Background = new SolidColorBrush(Colors.Green);
-                }
-            }
-        }
-
-        private void textInput_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if(textInput.Text.Contains('\n'))
-            textLabel.Content = "sfgsdfgsdfg";
-        }
 
         private void textInput_KeyDown(object sender, KeyEventArgs e)
         {

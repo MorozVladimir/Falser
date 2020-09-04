@@ -21,8 +21,6 @@
                 Grid.Row="0"
                 FontSize="25" 
                 Name="textInput" 
-                TouchEnter="TextBox_TouchEnter" 
-                TextChanged="textInput_TextChanged" 
                 KeyDown="textInput_KeyDown">
             </TextBox>
             <Label
