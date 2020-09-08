@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Falser"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" >
+        Title="Falser v2.0" Height="450" Width="800" WindowState="Maximized" >
     <Grid>
         <Grid HorizontalAlignment="Center">
             <Grid.RowDefinitions>
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
@@ -31,6 +32,32 @@
                 Name="textLabel">
                 Ничего ни введено
             </Label>
+            <Grid
+                Grid.Row="2"
+                Height="60">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox 
+                VerticalAlignment="Bottom"
+                Margin="10"
+                Width="50"
+                Height="40"
+                Grid.Column="0"
+                FontSize="25" 
+                Name="textTimer">
+                </TextBox>
+                <Button
+                    Grid.Column="2"
+                    Content="Установить паузу" Click="Button_Click"
+                    Height="40">
+                    
+                </Button>
+
+            </Grid>
+
 
 
         </Grid>
